@@ -1,0 +1,14 @@
+Henry Zheng
+IntroCS2 pd8
+HW01 -- Onward! To the land of CS
+2016-02-04
+
+My CS journey thus far has not been a very eventful one.
+The only major point in this journey would be IntroCS1.
+Here, I learned all that I know so far about CS.
+It has been somewhat of a bumpy road, with lots of twists and turns.
+However, that is how you learn.
+I've enjoyed learning how to think differently in CS, such as in prefix notation for scheme.
+I've also enjoyed learning a visual language (ie. netlogo).
+The most enjoyable part of IntroCS1 was learning together, with partners, as I feel that they can assist you a lot throughout your journey in CS.
+Another time of partner work was the final project, which was also fun due to your unlimited (although somewhat limited due to your knowledge of netlogo) choices of projects.
