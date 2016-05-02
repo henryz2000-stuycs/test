@@ -40,12 +40,18 @@ def fillBlanks(story):
     while story.count('<ADVERB>')>0:
         adv = advs[random.randrange(len(advs))]
         story = story.replace("<ADVERB>", adv ,1)
+    story = story.split(". ")
+    for x in story:
+        story[story.index(x)] = x.capitalize()
+    story = ". ".join(story)
     return story
 
-story= "The <ADJECTIVE> <NOUN> <VERB> <ADVERB> upside down."
-print fillBlanks(story)
+#story= "The <ADJECTIVE> <NOUN> <VERB> <ADVERB> upside down."
+#print fillBlanks(story)
 
-story2="If <NOUN> likes <NOUN>, then you will see how <ADJECTIVE> punctuation is. And if you have more than one sentence, \
-this function still works <ADVERB> and <ADVERB>. This is how <ADJECTIVE> we are."
-print fillBlanks(story2)
+#story2="If <NOUN> likes <NOUN>, then you will see how <ADJECTIVE> punctuation is. And if you have more than one sentence, \
+#this function still works <ADVERB> and <ADVERB>. This is how <ADJECTIVE> we are."
+#print fillBlanks(story2)
 
+story3="test story. <ADVERB> the <ADJECTIVE> <NOUN> <VERB> down on the <NOUN>"
+print fillBlanks(story3)
