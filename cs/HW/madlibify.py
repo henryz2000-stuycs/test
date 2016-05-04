@@ -95,14 +95,14 @@ def madlibify(story):
     return story
 
 story = """
-Once upon a time, a <NOUN-SINGULAR> <VERB-PAST-SINGULAR> to <VERB> the way <NOUN-SINGULAR> <VERB-PAST-SINGULAR>.
-<NOUN-SINGULAR> <VERB-PAST-SINGULAR> it would help him <VERB> more <ADVERB>.
-<NOUN-SINGULAR> put on the skin of a <NOUN-SINGULAR>, then <NOUN-SINGULAR> <VERB-PAST-SINGULAR> with <NOUN-SINGULAR> into the <NOUN-SINGULAR>.
-Even the <NOUN-SINGULAR> was <VERB-PAST-SINGULAR> by his <ADJECTIVE> <NOUN-SINGULAR>.
-In the evening, the <NOUN-SINGULAR> <VERB-PAST-SINGULAR> him in with the rest of the <NOUN>.
-<NOUN-SINGULAR> <VERB-PAST-SINGULAR> the <NOUN-SINGULAR> and made sure it was <ADJECTIVE> before he <VERB-PAST-SINGULAR> to <NOUN-SINGULAR>.
-In the middle of the night, he <VERB-PAST-SINGULAR> back to the <NOUN-SINGULAR> to <VERB> some <NOUN> for the next day.
-Instead of a <NOUN-SINGULAR>, though, he <VERB-PAST-SINGULAR> the <NOUN-SINGULAR>, killing <NOUN-SINGULAR> instantly.
+Once upon a time, a <NOUN-SINGULAR> <VERB-PAST-SINGULAR> to <VERB> the way <NOUN-SINGULAR> <VERB-PAST-SINGULAR>.<br>
+<NOUN-SINGULAR> <VERB-PAST-SINGULAR> it would help him <VERB> more <ADVERB>.<br>
+<NOUN-SINGULAR> put on the skin of a <NOUN-SINGULAR>, then <NOUN-SINGULAR> <VERB-PAST-SINGULAR> with <NOUN-SINGULAR> into the <NOUN-SINGULAR>.<br>
+Even the <NOUN-SINGULAR> was <VERB-PAST-SINGULAR> by his <ADJECTIVE> <NOUN-SINGULAR>.<br>
+In the evening, the <NOUN-SINGULAR> <VERB-PAST-SINGULAR> him in with the rest of the <NOUN>.<br>
+<NOUN-SINGULAR> <VERB-PAST-SINGULAR> the <NOUN-SINGULAR> and made sure it was <ADJECTIVE> before he <VERB-PAST-SINGULAR> to <NOUN-SINGULAR>.<br>
+In the middle of the night, he <VERB-PAST-SINGULAR> back to the <NOUN-SINGULAR> to <VERB> some <NOUN> for the next day.<br>
+Instead of a <NOUN-SINGULAR>, though, he <VERB-PAST-SINGULAR> the <NOUN-SINGULAR>, killing <NOUN-SINGULAR> instantly.<br>
 Those who look to <VERB> others will be <VERB-PAST-SINGULAR> themselves.
 """
 print madlibify(story)
