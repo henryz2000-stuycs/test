@@ -61,9 +61,10 @@ def madlibify(story):
                
     while story.count('<NOUN')>0:
         entire=story[story.find('<NOUN'):story.index('>',story.find('<NOUN'))+1]  #extract the section btw <NOUN and >
-        noun = nouns[random.randrange(len(nouns))]                                #which would be the entire <NOUN-SINGULAR/PLURAL>
+        noun = nouns[random.randrange(len(nouns))]                            #which would be the entire <NOUN-SINGULAR/PLURAL>
         if entire.find('PLURAL') != -1:                                      
             noun += 's'
+        noun = "<b>" + noun + "</b>" 
         story = story.replace(entire, noun ,1)       #added '1' because then it would only replace one of the <NOUN s at a time
         
     while story.count('<VERB')>0:
@@ -77,10 +78,11 @@ def madlibify(story):
         else:
             if entire.find('SINGULAR') != -1:     #add s only if it doesnt have PAST
                 verb += 's'
+        verb = "<i>" + verb + "</i>"
         story = story.replace(entire, verb ,1)
 
     while story.count('<ADJECTIVE>')>0:          
-        adj = adjs[random.randrange(len(adjs))]
+        adj = "<u>" + adjs[random.randrange(len(adjs))] + "</u>"
         story = story.replace("<ADJECTIVE>", adj ,1)
              
     while story.count('<ADVERB>')>0:
@@ -93,6 +95,13 @@ def madlibify(story):
         story[story.index(x)] = x.capitalize()
     story = ". ".join(story)
     return story
+
+
+print """
+<b>bold</b> = noun<br>
+<i>italicize</i> = verb<br>
+<u>underline</u> = adjective<br><br>
+"""
 
 story = """
 Once upon a time, a <NOUN-SINGULAR> <VERB-PAST-SINGULAR> to <VERB> the way <NOUN-SINGULAR> <VERB-PAST-SINGULAR>.<br>
