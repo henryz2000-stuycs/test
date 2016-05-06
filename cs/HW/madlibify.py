@@ -98,6 +98,10 @@ def madlibify(story):
 
 
 print """
+<style>
+body {border: groove; background-size: 1500px 800px; background-position: right; background-repeat: no-repeat;
+background-image: url("http://normanblogger.com/wp-content/uploads/2014/04/question-mark-sign.jpg"); font-size: 135%;}
+</style>
 <b>bold</b> = noun<br>
 <i>italicize</i> = verb<br>
 <u>underline</u> = adjective<br><br>
