@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- 
+     Stolen from the
+    Template for FRONT-END 
+     by Clyde "Thluffy" Sinclair 
+  -->
+
+<html>
+<head>
+<title>Perimeter and Area of a Triangle</title>
+</head>
+
+<body>
+
+  <h3>Shows you the perimeter and area of any triangle.</h3>
+  Works as long as there are 3 sides to the triangle and it is a legit triangle.
+  <br>
+
+  <h4>Usage: </h4>
+  Enter the lengths of the three sides in the text fields, then click submit.
+  <br>
+  The computer will take these lengths, and calculate the perimeter and area of a triangle for you.
+  <br><br>
+
+  <h4>ProTips:</h4>
+  <ol>
+    <li> Make sure to enter a legit triangle.</li>
+    <li> Make sure to insert lengths for all 3 sides of the triangle</li>
+  </ol>
+
+  <form name="input" method="GET" action="tmplt_backEnd.py">
+    <br>
+    Length of first side of triangle: <input type="text" name="a">
+    <br>
+    Length of second side of triangle: <input type="text" name="b">
+    <br>
+    Length of third side of triangle: <input type="text" name="c">
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

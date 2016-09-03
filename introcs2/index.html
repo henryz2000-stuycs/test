@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<!--
+     Stolen from the
+    Template for FRONT-END
+     by Clyde "Thluffy" Sinclair
+  -->
+
+<html>
+<head>
+<title>NYC Handy Hotspot v0.1</title>
+<link rel="icon" href="logo1.gif">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+ <div class="container">
+  <div class="body_section" id="description">
+    <h2>What is it?</h2>
+    Handy Hotspot NYC is a website created by Henry Zheng and Gilvir Gill. Written
+    in Python, it takes the location given by the user and compares distances between
+    it and a database of hotspots throughout NYC. Once it finds the closest one by
+    using Google Maps Geocode API to get coordinates and then using math to fnd the distance
+    between 2 given coordinate points, it will then give the user directions to the closest location.
+    <br>
+  </div>
+
+  <div class="body_section" id="usage_info">
+    <h2>Usage: </h2>
+    Enter an address into the text field.
+    <br>
+    The computer will take your address, and it will find the closest Wi-Fi hotspot.
+    <br>
+  </div>
+
+  <h2>ProTips:</h2>
+  <ol>
+    <li> Make sure to enter an address in the correct format.</li>
+  </ol>
+  <div class="body_section" id="form">
+    <form name="input" method="GET" action="addressL.py">
+      <br>
+      Address (please enter a street address for more accurate results):<br> <input type="text" name="address" value="345 Chambers Street, New York, NY 10282" required>
+      <br>
+      Mode of Transportation:
+      <br>
+      <select name="mode" size="1">
+        <option selected>walking</option>
+        <option>bicycling</option>
+        <option>transit</option>
+        <option>driving</option>
+      </select>
+      <br>
+      Exclusions for Types of Hotspots:
+      <input type="checkbox" name="type" value="free">Free
+      <input type="checkbox" name="type" value="limitedfree">Limited Free
+      <input type="checkbox" name="type" value="partnersite">Partner Site
+      <br>
+      Exclusions for Different Types of Locations:
+      <input type="checkbox" name="location" value="indoor">Indoor
+      <input type="checkbox" name="location" value="libary">Library
+      <input type="checkbox" name="location" value="outdoor">Outdoor
+      <input type="checkbox" name="location" value="outdoorkiosk">Outdoor Kiosk
+      <input type="checkbox" name="location" value="outdoortwc">Outdoor TWC Aerial
+      <input type="checkbox" name="location" value="outdoorsubway">Subway Station
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+ </div>
+</body>
+</html>

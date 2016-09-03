@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<!--
+     Stolen from the
+    Template for FRONT-END
+     by Clyde "Thluffy" Sinclair
+  -->
+
+<html>
+<head>
+<title>NYC Handy Hotspot v0.1</title>
+<link rel="icon" href="logo1.gif">
+</head>
+
+<body>
+
+  <h3>Displays the closest Wi-Fi hotspot in NYC</h3>
+  Works as long as you input an address in the correct format.
+  <br>
+
+  <h4>Usage: </h4>
+  Enter an address into the text field.
+  <br>
+  The computer will take your address, and it will find the closest Wi-Fi hotspot.
+  <br><br>
+
+  <h4>ProTips:</h4>
+  <ol>
+    <li> Make sure to enter an address in the correct format.</li>
+  </ol>
+
+  <form name="input" method="GET" action="textForm.py">
+    <br>
+    Address (please enter a street address for more accurate results): <input type="text" name="address" value="345 Chambers Street, New York, NY 10282" required>
+    <br>
+    <br>
+    Please enter a mode of transportation.
+    <br>
+    <input type="radio" name="mode" value="walking" required>
+    Walking
+    <input type="radio" name="mode" value="bicycling">
+    Biking
+    <input type="radio" name="mode" value="transit">
+    Mass Transit
+    <input type="radio" name="mode" value="driving">
+    Driving
+    <br>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
